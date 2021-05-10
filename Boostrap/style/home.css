@@ -1,0 +1,118 @@
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Nunito Sans', sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Starting header */
+.header-top {
+    padding: 9px 0;
+    width: 100%;
+}
+
+.active {
+    color: #007d2f !important;
+    font-weight: 700 !important;
+}
+
+.nav-link {
+    color: #191919;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+/* Starting section */
+section {
+    background-color: #007d2f;
+}
+
+section .designer h2 {
+    color: #171717;
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 110px;
+}
+
+section .designer p {
+    font-size: 18px;
+    margin-top: 22px;
+    margin-bottom: 80px;
+}
+
+/* Starting main */
+.item-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.item-hover {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .item-img img {
+    width: 100%;
+    height: 400px;
+}
+
+main .item-img .item-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #378956;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+
+main .item-img:hover .item-hover {
+    transform: rotate(360deg);
+    opacity: 0.8;
+}
+
+.bi {
+    font-size: 60px;
+    color: #fff;
+}
+
+/* Starting footer */
+footer {
+    padding: 100px 0;
+    background: #141414;
+}
+footer h2{
+    font-size: 17px;
+    font-weight: 500;
+    word-spacing: 0.5rem;
+}
+footer p {
+    font-size: 14px !important;
+    color: #bcbcbc;
+}
+
+.nav-link{
+    font-size: 14px;
+    color: #bcbcbc;
+    text-transform: capitalize;
+}
+
+footer .nav-link:hover {
+    color: #fff;
+}
+@media (max-width: 576px){
+    footer .nav-link{
+        font-size: 12px;
+    }
+}
